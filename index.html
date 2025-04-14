@@ -25,19 +25,18 @@
         .easter-egg {
             position: fixed;
             bottom: 20px;
-            right: 20px;
+            right: 100%;
             padding: 10px 15px;
             background-color: #f39c12;
             color: white;
             border-radius: 30px;
-            transition: transform 0.5s;
             cursor: pointer;
-            animation: move 5s infinite alternate;
+            animation: slide 5s linear infinite; /* Обновлено на новую анимацию */
         }
 
-        @keyframes move {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-10px); }
+        @keyframes slide {
+            0% { right: 100%; }
+            100% { right: 0; }
         }
 
         .gif-container {

@@ -21,7 +21,36 @@
         .button:hover {
             background-color: #2e6c32;
         }
+
+        .easter-egg {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: #f39c12;
+            color: white;
+            border-radius: 30px;
+            transition: transform 0.5s;
+            cursor: pointer;
+            animation: move 5s infinite alternate;
+        }
+
+        @keyframes move {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+
+        .gif-container {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
+    <script>
+        function showGif() {
+            document.querySelector('.gif-container').style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -29,7 +58,7 @@
         <p>Я начинающий программист.</p>
         <nav>
             <a href="#home" class="button">Главная</a>
-            <a href="#portfolio" class="button">Мои проекрты</a>
+            <a href="#portfolio" class="button">Мои проекты</a>
             <a href="#about" class="button">О себе</a>
         </nav>
     </header>
@@ -63,7 +92,7 @@
 
         <h2>Интересные факты обо мне</h2>
         <ul>
-            <li>Я люблю играть в видеоигры и изучать новые технологии, в свободное время люблою поиграть в видео игры, посмотреть фильмы или зонятьсся своим хобби.</li>
+            <li>Я люблю играть в видеоигры и изучать новые технологии, в свободное время люблю поиграть в видео игры, посмотреть фильмы или заняться своим хобби.</li>
             <li>У меня есть собака по имени Бобик, и мы часто гуляем вместе!</li>
         </ul>
 
@@ -85,6 +114,9 @@
         <div class="gif-container">
             <img src="gif.gif" alt="Веселая GIF" class="gif">
         </div>
+        
+        <div class="easter-egg" onclick="showGif()">👾 Пасхалка</div>
+        
         <footer>
             <p>&copy; 2025 Серёжа</p>
         </footer>

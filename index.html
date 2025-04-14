@@ -5,15 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио Сергея</title>
     <link rel="stylesheet" href=".\styles.css">
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 10px;
+            background-color: #3e8e41;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #2e6c32;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Привет, я Серго!</h1>
         <p>Я начинающий программист.</p>
+        <nav>
+            <a href="#home" class="button">Главная</a>
+            <a href="#portfolio" class="button">Портфолио</a>
+            <a href="#about" class="button">О себе</a>
+        </nav>
     </header>
 
     <main>
-        <h2>Я учусь на программиста</h2>
+        <h2 id="about">Я учусь на программиста</h2>
         <p>Мне 20 лет, и я увлечен разработкой телеграмм-ботов.</p>
 
         <h2>Образование</h2>
@@ -26,7 +48,7 @@
             </ul>
         </ul>
 
-        <h2>Мои проекты разработки</h2>
+        <h2 id="portfolio">Мои проекты разработки</h2>
         <div class="project">
             <h3>Телеграмм-бот для отслеживания погоды</h3>
             <p>Описание: Этот бот предоставляет пользователям актуальную информацию о погоде на основе их местоположения.</p>
@@ -59,16 +81,13 @@
             <p>Email: whimsical_hike499@example.com</p>
             <p>GitHub: <a href="https://github.com/dashboard" target="_blank">Ваш профиль</a></p>
         </section>
-<!-- Добавляем GIF внизу страницы -->
+
         <div class="gif-container">
             <img src="gif.gif" alt="Веселая GIF" class="gif">
         </div>
         <footer>
             <p>&copy; 2025 Серёжа</p>
         </footer>
-
-        
-
     </main>
 </body>
 </html>

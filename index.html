@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио Сергея</title>
-    <link rel="stylesheet" href=".\styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <style>
         .button {
             display: inline-block;
@@ -31,7 +31,7 @@
             color: white;
             border-radius: 30px;
             cursor: pointer;
-            animation: slide 5s linear infinite; /* Обновлено на новую анимацию */
+            animation: slide 5s linear infinite;
         }
 
         @keyframes slide {
@@ -47,7 +47,8 @@
     </style>
     <script>
         function showGif() {
-            document.querySelector('.gif-container').style.display = 'block';
+            document.querySelector('.gif-container').style.display = 'block'; // Показать GIF
+            document.querySelector('.easter-egg').style.display = 'none'; // Скрыть пасхалку
         }
     </script>
 </head>
@@ -115,7 +116,7 @@
         </div>
         
         <div class="easter-egg" onclick="showGif()">👾 Пасхалка</div>
-        
+
         <footer>
             <p>&copy; 2025 Серёжа</p>
         </footer>
